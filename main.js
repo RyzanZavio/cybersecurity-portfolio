@@ -6,7 +6,7 @@ const projects = [
     description:
       'Platform dual-mode (Web Dashboard + Python CLI) dengan JWT/RBAC, audit log PostgreSQL, NVD + CISA KEV, SSE scan streaming, dan export SARIF. Engine eksperimen dalam Go dan Rust (FFI).',
     stack: ['React', 'Express', 'PostgreSQL', 'Python', 'Go', 'Rust', 'Docker'],
-    link: 'https://github.com/rayzanzavio/cybersecurity-vulnerability-audit-scanner',
+    link: 'https://github.com/RyzanZavio/cybersecurity-vulnerability-audit-scanner',
   },
 ];
 
