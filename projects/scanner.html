@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scanner — Muhammad Rayzan Zavio</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <main class="container">
+    <p><a href="../index.html">← Kembali ke Portofolio</a></p>
+
+    <header class="hero">
+      <p class="prompt">~/projects$ cat scanner.md</p>
+      <h1>Cybersecurity Vulnerability Audit Scanner</h1>
+      <p class="tagline">Enterprise web application security auditing platform</p>
+      <div class="stack">
+        <span>React</span><span>Express</span><span>PostgreSQL</span><span>Python</span><span>Go</span><span>Rust</span><span>Docker</span>
+      </div>
+      <a class="cta" href="https://github.com/rayzanzavio/cybersecurity-vulnerability-audit-scanner" target="_blank" rel="noreferrer">Lihat di GitHub →</a>
+    </header>
+
+    <section>
+      <h2><span class="accent">#</span> Masalah &amp; Solusi</h2>
+      <p>Audit keamanan aplikasi web biasanya dilakukan manual, lambat, dan hasilnya tersebar di banyak tempat. Tools ini mengotomatiskan proses audit: scanning sesuai OWASP, scoring CVSS, filter soft-404, dan export laporan standar <b>SARIF 2.1.0</b> — dalam dua mode sekaligus:</p>
+      <p><b>Web Dashboard</b> untuk tim (React + Express + PostgreSQL), dan <b>Python CLI</b> yang jalan mandiri tanpa Node.js.</p>
+    </section>
+
+    <section>
+      <h2><span class="accent">#</span> Fitur Utama</h2>
+      <div class="grid">
+        <div class="card"><h3>Autentikasi &amp; RBAC</h3><p>JWT access + refresh token, dengan role admin / analyst / viewer.</p></div>
+        <div class="card"><h3>Scan Streaming (SSE)</h3><p>Progres scan dipantau real-time lewat Server-Sent Events.</p></div>
+        <div class="card"><h3>NVD + CISA KEV</h3><p>Mapping temuan ke database kerentanan resmi dan daftar KEV.</p></div>
+        <div class="card"><h3>Audit Log Immutable</h3><p>Semua aksi admin tercatat permanen di PostgreSQL.</p></div>
+        <div class="card"><h3>Export Multi-Format</h3><p>SARIF 2.1.0, JSON, CSV — siap masuk pipeline CI/CD.</p></div>
+        <div class="card"><h3>SSRF Guard</h3><p>Validasi target di sisi server dan CLI untuk mencegah SSRF.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="accent">#</span> Stack Teknologi</h2>
+      <p>Frontend: <b>React 19 + Vite + TypeScript</b><br />
+         Backend: <b>Express + PostgreSQL</b><br />
+         CLI: <b>Python 3 (zero-Node auditor)</b><br />
+         Eksperimen: engine <b>Go</b> dan FFI <b>Rust</b> (build/test di CI)<br />
+         Deploy: <b>Docker Compose</b> (app + Postgres + target demo nginx)</p>
+    </section>
+
+    <section>
+      <h2><span class="accent">#</span> Cara Menjalankan</h2>
+      <div class="terminal">
+<pre style="margin:0; white-space:pre-wrap;"># Scan cepat via CLI
+python cyber_audit.py -u https://example.com -p medium
+
+# Export SARIF
+python cyber_audit.py -u https://example.com -f sarif -o report.sarif
+
+# Jalankan stack lengkap (dashboard + Postgres + demo target)
+docker compose up --build</pre>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Muhammad Rayzan Zavio — <a href="../index.html">Kembali ke beranda</a></p>
+    </footer>
+  </main>
+</body>
+</html>

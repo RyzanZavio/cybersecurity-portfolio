@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio — Muhammad Rayzan Zavio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="#home">[ MUHAMMAD RAYZAN ZAVIO. ]</a>
+    <div class="nav-links">
+      <a href="#home" data-i18n="nav_home">Beranda</a>
+      <a href="#about" data-i18n="nav_about">Profil</a>
+      <a href="#skills" data-i18n="nav_skills">Keahlian</a>
+      <a href="#achievements" data-i18n="nav_achv">Pencapaian</a>
+      <a href="#projects" data-i18n="nav_projects">Proyek</a>
+      <a href="#contact" data-i18n="nav_contact">Kontak</a>
+      <button id="lang-toggle" type="button" class="lang-btn">EN</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <header id="home" class="hero">
+      <p class="prompt">rayzanzavio@portfolio:~$ whoami</p>
+      <h1>Muhammad Rayzan Zavio</h1>
+      <p class="tagline"><span id="typed"></span><span class="cursor">▋</span></p>
+      <p class="contact-line"><span data-i18n="contact_label">Kontak:</span> <a href="mailto:rayzanzavio@gmail.com">rayzanzavio@gmail.com</a></p>
+      <div class="badges">
+        <a class="badge" href="https://github.com/rayzanzavio" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" style="vertical-align:-2px; margin-right:6px;"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>GitHub
+        </a>
+        <a class="badge" href="mailto:rayzanzavio@gmail.com">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" style="vertical-align:-2px; margin-right:6px;"><path d="M1.5 3h13A1.5 1.5 0 0 1 16 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5v-7A1.5 1.5 0 0 1 1.5 3zm.7 1.5L8 9.06l5.8-4.56H2.2zM14.5 6.44l-6.5 5.1-6.5-5.1v5.06a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5V6.44z"/></svg>Email
+        </a>
+      </div>
+      <div class="focus-badges">
+        <a href="#skills"><b>01</b><span data-i18n="badge1">Web<br>Development</span></a>
+        <a href="#projects"><b>02</b><span data-i18n="badge2">Web Security</span></a>
+        <a href="#terminal-section"><b>03</b><span data-i18n="badge3">Tooling</span></a>
+      </div>
+      <a class="cta" href="#projects" data-i18n="cta_projects">Lihat Proyek →</a>
+    </header>
+
+    <section id="about">
+      <h2><span class="accent">01</span> <span data-i18n="h_about">Profil</span></h2>
+      <p data-i18n="about_p">Saya <b>Muhammad Rayzan Zavio</b>, developer yang berfokus pada keamanan aplikasi web dan tooling. Saya membangun proyek nyata seperti platform audit keamanan berbasis web, dan mendokumentasikannya secara terbuka.</p>
+    </section>
+
+    <section id="achievements">
+      <h2><span class="accent">02</span> <span data-i18n="h_achv">Pencapaian</span></h2>
+      <div class="card">
+        <h3 data-i18n="achv_title">Sertifikasi</h3>
+        <p data-i18n="achv_desc">Sertifikat profesional yang sudah saya raih. Klik untuk verifikasi di Credly.</p>
+        <a class="badge" href="https://www.credly.com/badges/d5cc76fa-aaeb-44bf-a2a5-eb43eb70c152/public_url" target="_blank" rel="noreferrer">Lihat Sertifikat →</a>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2><span class="accent">03</span> <span data-i18n="h_skills">Keahlian</span></h2>
+      <div class="skill-group">
+        <h3>Web Development</h3>
+        <div class="skill"><span>HTML</span><div class="bar"><i style="width:85%"></i></div><b>85%</b></div>
+        <div class="skill"><span>CSS</span><div class="bar"><i style="width:80%"></i></div><b>80%</b></div>
+        <div class="skill"><span>JavaScript / TypeScript</span><div class="bar"><i style="width:75%"></i></div><b>75%</b></div>
+      </div>
+      <div class="skill-group">
+        <h3>Backend &amp; Tools</h3>
+        <div class="skill"><span>Node / Express</span><div class="bar"><i style="width:75%"></i></div><b>75%</b></div>
+        <div class="skill"><span>Python</span><div class="bar"><i style="width:80%"></i></div><b>80%</b></div>
+        <div class="skill"><span>Docker &amp; PostgreSQL</span><div class="bar"><i style="width:70%"></i></div><b>70%</b></div>
+        <div class="skill"><span>Go / Rust</span><div class="bar"><i style="width:55%"></i></div><b>55%</b></div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2><span class="accent">04</span> <span data-i18n="h_projects">Proyek</span></h2>
+
+      <h3 data-i18n="h_presentation">Presentasi Tools</h3>
+      <div class="terminal presentation">
+        <div id="slide" class="slide"></div>
+        <div class="slide-nav">
+          <button id="prev" type="button" data-i18n="prev">‹ Sebelumnya</button>
+          <span id="counter"></span>
+          <button id="next" type="button" data-i18n="next">Selanjutnya ›</button>
+        </div>
+        <button id="to-projects" type="button" class="cta" hidden data-i18n="to_projects">Lanjutkan Melihat Proyek →</button>
+      </div>
+
+      <h3>Tools &amp; Projects</h3>
+      <div class="grid" id="project-grid"></div>
+    </section>
+
+    <section id="terminal-section">
+      <h2><span class="accent">05</span> Terminal</h2>
+      <p data-i18n="terminal_p">Coba tanyakan tentang saya. Ketik <code>help</code>.</p>
+      <div class="terminal">
+        <div id="terminal-output" class="terminal-output"><div>Siap. Ketik "help" untuk mulai.</div></div>
+        <form id="terminal-form" class="terminal-form">
+          <label for="terminal-input">$</label>
+          <input id="terminal-input" type="text" autocomplete="off" />
+        </form>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2><span class="accent">06</span> <span data-i18n="h_contact">Kontak</span></h2>
+      <p><span data-i18n="contact_p">Untuk kolaborasi atau diskusi proyek, hubungi saya di:</span>
+        <a href="mailto:rayzanzavio@gmail.com">rayzanzavio@gmail.com</a></p>
+    </section>
+
+    <footer class="footer">
+      <p data-i18n="footer">© 2026 Muhammad Rayzan Zavio — HTML • CSS • JavaScript</p>
+    </footer>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
