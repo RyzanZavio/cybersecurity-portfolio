@@ -92,6 +92,13 @@ h2 { border-bottom: 1px solid var(--glass-border); padding-bottom: 0.4rem; margi
 .grid { display: grid; gap: 1rem; }
 .card { padding: 1.25rem 1.5rem; transition: transform .2s ease, box-shadow .2s ease; }
 .card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(212,169,55,.12); }
+.hero { text-align: center; padding: 3rem 0 1rem; }
+.hero h1 { font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.15; }
+.prompt { text-align: center; }
+.focus-badges { justify-content: center; }
+.badges { justify-content: center; flex-wrap: wrap; }
+.cta { display: inline-block; }
+
 .card h3 { margin: 0 0 0.25rem; }
 .card .tagline { color: var(--gold); font-size: 0.9rem; margin: 0; }
 
@@ -164,3 +171,18 @@ code { background: rgba(212,169,55,0.12); border: 1px solid rgba(212,169,55,0.3)
 .lang-btn:hover { background: var(--gold); color: #14100d; }
 
 .footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--glass-border); color: var(--beige-dim); font-size: 0.8rem; text-align: center; }
+
+/* ---------- Mobile-friendly ---------- */
+@media (max-width: 640px) {
+  .container { padding: 1.5rem 1rem; }
+  .navbar { flex-wrap: wrap; justify-content: center; gap: 0.5rem 1rem; }
+  .nav-links { justify-content: center; gap: 0.7rem; }
+  .nav-links a { font-size: 0.8rem; }
+  .skill span { width: 100%; }
+  .skill { flex-wrap: wrap; gap: 0.35rem; }
+  .skill b { width: auto; margin-left: auto; }
+  .focus-badges div, .focus-badges a { padding: 0.6rem 0.9rem; }
+  .slide-nav { flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+  .terminal { font-size: 0.8rem; padding: 1rem; }
+  h2 { font-size: 1.3rem; }
+}
