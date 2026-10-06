@@ -23,6 +23,7 @@
       <a href="#skills" data-i18n="nav_skills">Keahlian</a>
       <a href="#achievements" data-i18n="nav_achv">Pencapaian</a>
       <a href="#projects" data-i18n="nav_projects">Proyek</a>
+      <a href="#docs" data-i18n="nav_docs">Dokumentasi</a>
       <a href="#contact" data-i18n="nav_contact">Kontak</a>
       <button id="lang-toggle" type="button" class="lang-btn">EN</button>
     </div>
@@ -99,8 +100,27 @@
       <div class="grid" id="project-grid"></div>
     </section>
 
+    <section id="docs">
+      <h2><span class="accent">05</span> <span data-i18n="h_docs">Dokumentasi</span></h2>
+      <p data-i18n="docs_p">Cara cepat memakai tools utama saya:</p>
+      <div class="terminal">
+<pre style="margin:0; white-space:pre-wrap;"># Install dependensi Python
+pip install -r requirements.txt
+
+# Scan satu target
+python3 cyber_audit.py -u https://example.com -p high
+
+# Export laporan SARIF
+python3 cyber_audit.py -u https://example.com -f sarif -o report.sarif
+
+# Jalankan dashboard web
+cyber-audit-web   # buka http://localhost:3000</pre>
+      </div>
+      <p><a href="https://github.com/RyzanZavio/CYBER-AUDIT-by-NazarzzDefa" target="_blank" rel="noreferrer">Dokumentasi lengkap di GitHub →</a></p>
+    </section>
+
     <section id="terminal-section">
-      <h2><span class="accent">05</span> Terminal</h2>
+      <h2><span class="accent">06</span> Terminal</h2>
       <p data-i18n="terminal_p">Coba tanyakan tentang saya. Ketik <code>help</code>.</p>
       <div class="terminal">
         <div id="terminal-output" class="terminal-output"><div>Siap. Ketik "help" untuk mulai.</div></div>
@@ -112,7 +132,7 @@
     </section>
 
     <section id="contact">
-      <h2><span class="accent">06</span> <span data-i18n="h_contact">Kontak</span></h2>
+      <h2><span class="accent">07</span> <span data-i18n="h_contact">Kontak</span></h2>
       <p><span data-i18n="contact_p">Untuk kolaborasi atau diskusi proyek, hubungi saya di:</span>
         <a href="mailto:rayzanzavio@gmail.com">rayzanzavio@gmail.com</a></p>
     </section>
