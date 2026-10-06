@@ -1,3 +1,22 @@
+/* ---------- Loading animation ---------- */
+const loader = document.getElementById('loader');
+const loaderBar = document.getElementById('loader-bar');
+const loaderPct = document.getElementById('loader-pct');
+let progress = 0;
+const loadTimer = setInterval(() => {
+  progress += Math.random() * 12 + 4;
+  if (progress >= 100) {
+    progress = 100;
+    clearInterval(loadTimer);
+    setTimeout(() => {
+      loader.classList.add('done');
+      setTimeout(() => loader.remove(), 700);
+    }, 300);
+  }
+  loaderBar.style.width = progress + '%';
+  loaderPct.textContent = Math.floor(progress);
+}, 120);
+
 /* ---------- Projects ---------- */
 const projects = [
   {
