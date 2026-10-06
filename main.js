@@ -148,8 +148,8 @@ const i18n = {
   cta_projects: ['Lihat Proyek →', 'View Projects →'],
   h_about: ['Profil', 'About'],
   about_p: [
-    'Saya <b>Muhammad Rayzan Zavio</b>, siswa SMK jurusan Teknik Komputer dan Jaringan dengan minat pada cybersecurity dan software engineering. Saya membangun proyek nyata seperti platform audit keamanan berbasis web, dan mendokumentasikannya secara terbuka.',
-    'I am <b>Muhammad Rayzan Zavio</b>, a vocational high school student majoring in Computer and Network Engineering, with an interest in cybersecurity and software engineering. I build real projects like a web-based security audit platform, documented openly.',
+    'Saya <b>Muhammad Rayzan Zavio</b>, siswa <b>SMK 3 Kota Bekasi</b> jurusan Teknik Komputer dan Jaringan dengan minat pada cybersecurity dan software engineering. Saya membangun proyek nyata seperti platform audit keamanan berbasis web, dan mendokumentasikannya secara terbuka.',
+    'I am <b>Muhammad Rayzan Zavio</b>, a student of <b>SMK 3 Kota Bekasi</b> (Computer and Network Engineering), with an interest in cybersecurity and software engineering. I build real projects like a web-based security audit platform, documented openly.',
   ],
   h_skills: ['Keahlian', 'Skills'],
   h_achv: ['Pencapaian', 'Achievements'],
